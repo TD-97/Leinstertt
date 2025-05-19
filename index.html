@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leinster Table Tennis</title>
+  <style>
+    :root {
+      --main-bg: #add8e6; /* Light blue */
+      --text-color: white;
+      --accent: #ffffffcc; /* Translucent white */
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--main-bg);
+      color: var(--text-color);
+    }
+
+    header {
+      background: #007acc;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.75rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      background: #3399ff;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    nav a {
+      color: var(--text-color);
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+      transition: background 0.3s;
+      position: relative;
+    }
+
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.4);
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #3399ff;
+      min-width: 200px;
+      z-index: 1;
+      border-radius: 0 0 8px 8px;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 0.5rem 1rem;
+      color: var(--text-color);
+      text-decoration: none;
+      border-top: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .dropdown-content a:hover {
+      background-color: rgba(255,255,255,0.2);
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      border-bottom: 2px solid var(--text-color);
+      padding-bottom: 0.5rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      color: var(--text-color);
+    }
+
+    th, td {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 0.5rem;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Leinster Table Tennis Branch
+  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <div class="dropdown">
+      <a href="#">Rankings</a>
+      <div class="dropdown-content">
+        <a href="senior-men.html">Senior Men</a>
+        <a href="senior-women.html">Senior Women</a>
+        <a href="u21-men.html">U21 Men</a>
+        <a href="u21-women.html">U21 Women</a>
+        <a href="junior-boys.html">Junior Boys</a>
+        <a href="junior-girls.html">Junior Girls</a>
+        <a href="mini-junior-boys.html">Mini Junior Boys</a>
+        <a href="mini-junior-girls.html">Mini Junior Girls</a>
+        <a href="cadet-boys.html">Cadet Boys</a>
+        <a href="cadet-girls.html">Cadet Girls</a>
+        <a href="mini-cadet-boys.html">Mini Cadet Boys</a>
+        <a href="mini-cadet-girls.html">Mini Cadet Girls</a>
+      </div>
+    </div>
+
+    
+    <a href="#system">Ranking System</a>
+    <a href="#criteria">Selection Criteria</a>
+    <a href="#calendar">Calendar</a>
+    <a href="#members">Branch Members</a>
+  </nav>
+  <main>
+    <section id="home">
+      <h2>Welcome</h2>
+      <p>Welcome to the official website of the Leinster Table Tennis Branch. Here you'll find rankings, events, and important updates for players and supporters alike.</p>
+    </section>
+
+    <!-- Rankings Sections -->
+    <section id="senior-men">
+      <h2>Senior Men Rankings</h2>
+      <table>
+        <tr><th>Name</th><th>Points</th></tr>
+        <tr><td>John Murphy</td><td>920</td></tr>
+        <tr><td>David Ryan</td><td>870</td></tr>
+        <tr><td>Mark Kelly</td><td>850</td></tr>
+        <tr><td>Brian Dempsey</td><td>840</td></tr>
+        <tr><td>Alan Walsh</td><td>830</td></tr>
+        <tr><td>Kevin Byrne</td><td>820</td></tr>
+        <tr><td>Sean O'Neill</td><td>810</td></tr>
+        <tr><td>Tommy Nolan</td><td>800</td></tr>
+        <tr><td>Luke Brady</td><td>790</td></tr>
+        <tr><td>James Connors</td><td>780</td></tr>
+      </table>
+    </section>
+
+    <section id="senior-women">
+      <h2>Senior Women Rankings</h2>
+      <table>
+        <tr><th>Name</th><th>Points</th></tr>
+        <tr><td>Sarah Doyle</td><td>900</td></tr>
+        <tr><td>Emily Moore</td><td>880</td></tr>
+        <tr><td>Kate Whelan</td><td>860</td></tr>
+        <tr><td>Anna Kinsella</td><td>850</td></tr>
+        <tr><td>Rebecca Scott</td><td>840</td></tr>
+        <tr><td>Laura Reilly</td><td>830</td></tr>
+        <tr><td>Emma McGrath</td><td>820</td></tr>
+        <tr><td>Aoife Hughes</td><td>810</td></tr>
+        <tr><td>Claire Nolan</td><td>800</td></tr>
+        <tr><td>Grace Kennedy</td><td>790</td></tr>
+      </table>
+    </section>
+
+    <!-- Repeat the above format for all other ranking categories -->
+    <!-- You can let me know if you want me to generate all remaining 10 tables -->
+
+    <section id="system">
+      <h2>Ranking System Explained</h2>
+      <p>Details on how the ranking system works will be available here.</p>
+    </section>
+    <section id="criteria">
+      <h2>Interprovincial Selection Criteria</h2>
+      <p>Criteria for Interprovincial Team selection will be outlined here.</p>
+    </section>
+    <section id="calendar">
+      <h2>Calendar of Events</h2>
+      <p>A schedule of upcoming events will be listed here.</p>
+    </section>
+  </main>
+</body>
+</html>
